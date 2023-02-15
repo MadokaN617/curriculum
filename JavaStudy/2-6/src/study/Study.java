@@ -55,14 +55,8 @@ public class Study {
      * @param year
      */
     private static void printLeapYear(final int year) {
-    	boolean isLeapYear = false;
-        if (year % 4 == 0) {
-            if ((year % 100) == 0) {
-                isLeapYear = ((year % 400) == 0);
-            } else {
-                isLeapYear = true;
-            }
-        }
+    
+    	
         System.out.println(year + "年は、うるう年" + (Year.isLeap(year) ? "です。" : "ではありません。"));
     }
 }
