@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
-    
-    .wrapper {
+
+    .wrapper, .header, .footer {
         width: 300px;
     }
 
@@ -8,18 +8,35 @@
         width: 100px;
     }
 
-    .content-top-left-top {
+    .right-top {
+        width: 75px;
+    }
+
+    .top {
+        width: 125px;
+
+    }
+
+    .middle {
         width: 125px;
     }
 
-    .content-top-right {
-        width: 75px;
+    .bottom {
+        width: 200px;
     }
+
 }
 
 @media screen and (max-width: 479px) {
 
-    .wrapper {
+    .wrapper, .header, .left, .right-top, .top, .top, .middle, .bottom, .footer {
         width: 150px;
     }
+
+    .left, .right, .right-top {
+        float: none;
+    }
+
+
+
 }
