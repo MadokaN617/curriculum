@@ -1,6 +1,11 @@
-.clearfix::after { 
+.wrapper {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.clearfix::after {
     content: '';
-    display: block; 
+    display: block;
     clear: both;
 }
 
@@ -8,37 +13,35 @@
     width: 400px;
     height: 100px;
     background-color: #141f40;
+    position: relative;
 }
 
-.wrapper {
-    display: flex-end; 
-    flex-direction: row;
-    padding: 20px;
+.h-box {
+    width: 160px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    top: 20px;
+    left: 210px;
+    z-index: 10;
 }
 
 .box1 {
+    list-style: none;
     width: 40px;
     height: 40px;
     background-color: #a9004b;
-    border: solid 10px white;
-    float: right;
+    margin-left: 10px;
+    margin-top: 10px;
+    float: left;
+    
 }
 
-.box2 {
-    width: 40px;
-    height: 40px;
-    background-color: #a9004b;
-    border: solid 10px white;
-    float: right;
-}
-
-.box3 {
-    width: 40px;
-    height: 40px;
-    background-color: #a9004b;
-    border: solid 10px white;
-    float: right;
-}
+/* .main {
+    width: 400px;
+    height: 100px;
+    background-color: blue;
+} */
 
 .left {
     width: 150px;
@@ -52,44 +55,32 @@
     height: 250px;
     background-color: #8c2727;
     float: left;
+    position: relative;
 }
 
-.wrapper2 {
-    display: flex;
-    flex-flow: column;
-    padding-top: 40px;
-    padding-right: 60px;
-    padding-bottom: 40px;
-    padding-left: 40px;
+.r-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 10;
 }
 
-.block1 {
+.box2 {
+    list-style: none;
     width: 140px;
     height: 40px;
     background-color: #ff863f;
-    border: solid 5px white;
+    border: 5px solid white;
     margin-bottom: 10px;
 }
-
-.block2 {
-    width: 140px;
-    height: 40px;
-    background-color: #ff863f;
-    border: solid 5px white;
-    margin-bottom: 10px;
-}
-
-.block3 {
-    width: 140px;
-    height: 40px;
-    background-color: #ff863f;
-    border: solid 5px white;
-}
-
-
 
 .footer {
     width: 400px;
     height: 100px;
     background-color: #d98d30;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
