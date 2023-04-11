@@ -1,0 +1,34 @@
+@media screen and (max-width: 479px) {
+
+    .wrapper, .header, .left, .right, .footer{
+        width: 200px;
+    }
+
+    .box1, .left, .right {
+        float: none;
+    }
+
+    .header {
+        height: 200px;
+        position: relative;
+    }
+
+    .h-box {
+        width: 60px;
+        height: 160px;
+        position: absolute;
+        top: 20px;
+        left: 70px;
+    }
+
+    .right {
+        height: 210px;
+        position: relative;
+    }
+
+    .r-box {
+        position: absolute;
+        top: 20px;
+        left: 30px;
+    }
+}
